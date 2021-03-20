@@ -1,125 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
 
-h1 {
-font-family: 'Roboto Slab', serif;
-text-align: center;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
-background: lightyellow;
+font-family: "Exo 2", sans-serif;
+width: 100vw;
+height: 100vh;
+background: url("https://i1.faceprep.in/ProGrad/sky-moon-bg.png");
+background-size: 100% 100%;
 }
 
-.emoji-face {
-background: #F2DD68;
-height: 100px;
-width: 100px;
-border-radius: 50%;
-box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.07);
-position: relative;
-}
-
-.eye1 {
-background: #995710;
-height: 11px;
-width: 12px;
-border-radius: 50%;
+#astronaut1 {
 position: absolute;
-top: 30px;
-left: 20px;
+top: 5%;
+left: 5%;
+height: 500px;
+animation: floating 5s infinite ease-in;
 }
 
-.eye2 {
-background: #995710;
-height: 11px;
-width: 12px;
-border-radius: 50%;
+#astronaut2 {
 position: absolute;
-top: 30px;
-left: 70px;
+top: 30%;
+left: 30%;
+height: 425px;
+animation: floating 4s infinite ease-in;
 }
 
-.mouth {
-background: #995710;
-height: 34px;
-width: 70px;
-border-radius: 0 0 90px 90px;
+@keyframes floating {
+0% {
+transform: translateY(0px);
+}
+
+50% {
+transform: translateY(30px);
+}
+}
+
+form {
 position: absolute;
-top: 52px;
-left: 16px;
-z-index: 1;
-overflow: hidden;
+top: 15%;
+left: 65%;
+background-color: white;
+width: 450px;
+padding: 0px 75px;
+border-radius: 5px;
 }
 
-.tongue {
-background: #e25d5d;
-width: 38px;
-height: 38px;
-border-radius: 40%;
-position: absolute;
-top: 20px;
-left: 15px;
-z-index: 2;
+.block-display {
+display: block;
 }
 
-/*shock emoji*/
-.mouth-shock {
-background: #995710;
-height: 25px;
-width: 23px;
-border-radius: 50%;
-position: absolute;
-top: 50px;
-left: 40px;
+label {
+font-size: 16px;
+margin: 20px 0px 4px 0px;
 }
 
-/*speechless emoji*/
-.mouth-speechless {
-background: #995710;
-height: 5px;
-width: 70px;
-position: absolute;
-top: 60px;
-left: 16px;
+input[type="number"],
+input[type="text"],
+select {
+width: 300px;
+height: 40px;
+border: 1px solid black;
+padding: 0 5px;
 }
 
-.emoji-face {
-float: left;
-margin: 0px 20px 0px 0px;
+.rent-label {
+margin-right: 10px;
 }
 
-/* fixing the emoji */
-.wrapper {
-position: absolute;
-top: 150px;
-left: 500px;
-}
-
-/* Styling Text */
-#heading {
-text-align: center;
-font-size: 4em;
+#button {
+display: block;
+border-radius: 20px;
+background-color: #ec7920;
+border: none;
+color: white;
+padding: 15px 20px;
+margin: 40px auto;
 }
 
 h1 {
-font-size: 2em;
-}
-
-p {
-font-size: 1.5em;
-}
-
-/* Animation */
-.emoji-face:hover {
-transform: scale(1.25);
-}
-
-/* Styling write-up */
-.write-up {
-background-color: #d8aa2b;
-padding: 5% 10%;
-margin: 10% 20%;
 text-align: center;
-border-radius: 20px;
+margin: 20px auto;
+font-size: 1.6em;
+width: 280px;
 }
-
-
